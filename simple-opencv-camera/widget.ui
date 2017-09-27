@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QLabel" name="Video">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>600</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>388</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SobelButton">
+         <property name="text">
+          <string>sobel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="CircleButton">
+         <property name="text">
+          <string>circledetect</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="DectButton">
+         <property name="text">
+          <string>facedetect</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="OnButton">
+         <property name="text">
+          <string>ON</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
