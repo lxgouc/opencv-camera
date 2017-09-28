@@ -65,7 +65,7 @@ void Widget::getframe()
                       break;
     }
     QImage image=MatToQImage(frame);
-    //QImage image((const uchar*)frame.imageData,frame.width,frame.height,QImage::Format_RGB888);
+    //QImage image((const uchar*)frame.data,frame.cols,frame.rows,QImage::Format_RGB888);
     ui->Video->setPixmap(QPixmap::fromImage(image));
 }
 
@@ -212,9 +212,9 @@ void Widget::on_DectButton_clicked()
     if(!(funcchoice=='a'))
     {
         funcchoice='a';
-        if ( !nestedCascade.load( "/home/lxg/ouc/opencv_test/haarcascade_eye_tree_eyeglasses.xml" ) )
+        if ( !nestedCascade.load( "/home/lxg/ouc/opencv-camera/simple-opencv-camera/haarcascade_eye_tree_eyeglasses.xml" ) )
             cerr << "WARNING: Could not load classifier cascade for nested objects" << endl;
-        if( !cascade.load( "/home/lxg/ouc/opencv_test/haarcascade_frontalface_alt.xml" ) )
+        if( !cascade.load( "/home/lxg/ouc/opencv-camera/simple-opencv-camera/haarcascade_frontalface_alt.xml" ) )
         {
             cerr << "ERROR: Could not load classifier cascade" << endl;
             exit(1);
